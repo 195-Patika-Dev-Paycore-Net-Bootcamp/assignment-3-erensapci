@@ -1,5 +1,7 @@
 ﻿namespace WasteCollectionSystem.Models
 {
+
+    //Model class where the properties of the Vehicle class are defined as public virtual
     public class Vehicle
     {
         public virtual long Id { get; set; }

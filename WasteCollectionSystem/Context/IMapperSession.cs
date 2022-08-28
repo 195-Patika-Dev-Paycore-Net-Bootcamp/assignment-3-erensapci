@@ -6,6 +6,7 @@ namespace WasteCollectionSystem.Context
 {
     public interface IMapperSession
     {
+        //The interface with mapping functions that we need to define
         void BeginTransaction();
         void Commit();
         void Rollback();

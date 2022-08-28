@@ -16,10 +16,14 @@ namespace WasteCollectionSystem.Controllers
         {
             this.session = session;
         }
+        //The part where the grouping is made with the Id information and the number of clusters entered from the user.
+        
         [HttpGet]
         public List<List<Container>> groups (long vehicleId, int numberOfGroups)
         {
-   
+
+            //Currently, the algorithm does not give very accurate results.
+
             var groups = new List<List<Container>>();
             List<Container> containerList = session.Containers.Where(x => x.VehicleId == vehicleId).ToList();
             for (int i=0; i<numberOfGroups;i++)

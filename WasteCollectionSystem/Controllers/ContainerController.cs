@@ -18,6 +18,8 @@ namespace BootcampWasteCollectionSystem.Controllers
         {
             this.session = session;
         }
+
+        //get method to pull data of container table
         [HttpGet]
         public List<Container> Get()
         {
@@ -25,13 +27,14 @@ namespace BootcampWasteCollectionSystem.Controllers
             return result;
         }
 
+        //The get method of the data drawn from the container table according to the vehicleId
         [HttpGet("{vehicleId}")]
         public List<Container> Get(long vehicleId)
         {
            List<Container> result = session.Containers.Where(x => x.VehicleId == vehicleId).ToList();
             return result;
         }
-
+        //post method to add a new container
         [HttpPost]
         public void Post([FromBody] Container container)
         {
@@ -52,6 +55,7 @@ namespace BootcampWasteCollectionSystem.Controllers
             }
         }
 
+        //the field where the data of a container is updated (vehicle id should not be updated)
         [HttpPut]
         public ActionResult<Container> Put([FromBody] Container request)
         {
@@ -86,6 +90,7 @@ namespace BootcampWasteCollectionSystem.Controllers
             return Ok();
         }
 
+        //delete method in which data is deleted according to container id
         [HttpDelete("{id}")]
         public ActionResult<Container> Delete(int id)
         {

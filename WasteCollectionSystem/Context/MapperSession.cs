@@ -8,6 +8,7 @@ namespace WasteCollectionSystem.Context
 {
     public class MapperSession : IMapperSession
     {
+        //The Mapper section we implemented from the IMapperSession. the part where the necessary functions are held
         private readonly ISession session;
         private ITransaction transaction;
 

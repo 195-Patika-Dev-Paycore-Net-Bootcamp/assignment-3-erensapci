@@ -27,7 +27,7 @@ namespace WasteCollectionSystem
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            //The part where the nhibernate extensions link came from
             var connStr = Configuration.GetConnectionString("PostgreSqlConnection");
             services.AddNHibernatePosgreSql(connStr);
 

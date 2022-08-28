@@ -18,6 +18,8 @@ namespace WasteCollectionSystem.Controllers
         {
             this.session = session;
         }
+
+        //The section where all vehicle information is taken
         [HttpGet]
         public List<Vehicle> Get()
         {
@@ -25,6 +27,7 @@ namespace WasteCollectionSystem.Controllers
             return result;
         }
 
+        //The section wherw vehicle informations taken by Id 
         [HttpGet("{id}")]
         public Vehicle Get(int id)
         {
@@ -32,6 +35,7 @@ namespace WasteCollectionSystem.Controllers
             return result;
         }
 
+        //New vehicle information entered post attribute
         [HttpPost]
         public void Post([FromBody] Vehicle vehicle)
         {
@@ -51,7 +55,7 @@ namespace WasteCollectionSystem.Controllers
                 session.CloseTransaction();
             }
         }
-
+        //Put attribute section where vehicle information is updated
         [HttpPut]
         public ActionResult<Vehicle> Put([FromBody] Vehicle request)
         {
@@ -85,6 +89,7 @@ namespace WasteCollectionSystem.Controllers
             return Ok();
         }
 
+        //The part where existing vehicles can be deleted by entering id information
         [HttpDelete("{id}")]
         public ActionResult<Vehicle> Delete(long id)
         {

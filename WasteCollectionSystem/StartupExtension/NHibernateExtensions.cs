@@ -7,6 +7,7 @@ using WasteCollectionSystem.Context;
 
 namespace TechaApiHibernate.StartUpExtension
 {
+    //Nhibernate Extensions class with source code for nhibernate links
     public static class NHibernateExtensions
     {
 

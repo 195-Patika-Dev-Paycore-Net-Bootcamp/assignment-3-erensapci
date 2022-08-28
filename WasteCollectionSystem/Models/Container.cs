@@ -1,5 +1,7 @@
 ﻿namespace WasteCollectionSystem.Models
 {
+
+    //Model class where the properties of the container class are defined as public virtual
     public class Container
     {
         public virtual long Id { get; set; }
