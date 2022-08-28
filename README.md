@@ -47,3 +47,9 @@ Delete Vehicle:
 Containers Table GetByVehicleId:
 
 <img width="800" alt="GetByVehicleId" src="https://user-images.githubusercontent.com/43892645/187088303-0c3ff0ff-73dd-45c1-9f1c-1ea2cadb7f39.PNG">
+
+Grouping algorithm:
+
+<img width="794" alt="Grouping1" src="https://user-images.githubusercontent.com/43892645/187089934-36f94626-878d-45d8-8cdb-c5e8bcaa2efe.PNG">
+
+<img width="790" alt="Grouping2" src="https://user-images.githubusercontent.com/43892645/187089939-a26069da-f70d-4a34-aec1-4db89c3bdfd5.PNG">
